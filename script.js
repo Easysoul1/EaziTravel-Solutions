@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Mobile hamburger menu toggle
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
+  var hamburger = document.querySelector('.hamburger');
+  var navLinks = document.querySelector('.nav-links');
 
   if (hamburger && navLinks) {
     hamburger.addEventListener('click', function () {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Contact form handler
-  const contactForm = document.getElementById('contactForm');
+  var contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Blog "Read more" alert
-  const readMoreLinks = document.querySelectorAll('.read-more');
+  var readMoreLinks = document.querySelectorAll('.read-more');
   readMoreLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
       e.preventDefault();
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Newsletter subscribe handler
-  const newsletterForm = document.getElementById('newsletterForm');
+  var newsletterForm = document.getElementById('newsletterForm');
   if (newsletterForm) {
     newsletterForm.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -49,6 +49,21 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Thank you for subscribing!');
         input.value = '';
       }
+    });
+  }
+
+  // Back to top button
+  var backToTop = document.getElementById('backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 });

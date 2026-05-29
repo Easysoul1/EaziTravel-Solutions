@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — EaziTravel Solutions</title>
-  <meta name="description" content="Get in touch with EaziTravel Solutions. Send us a message or reach out on Instagram.">
+  <title>Contact Us — Book a Consultation | EaziTravel Solutions</title>
+  <meta name="description" content="Get in touch with EaziTravel Solutions. Book a consultation, send us a message, or reach out on Instagram and WhatsApp. We reply within 24 hours.">
+  <meta property="og:image" content="https://source.unsplash.com/featured/1200x630?travel,contact">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Space+Mono&family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -23,6 +24,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
       <li><a href="blog.html">Blog</a></li>
     </ul>
@@ -37,6 +39,16 @@
         <div>
           <h1 class="contact-headline">Get In Touch</h1>
           <form id="contactForm">
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="consultancy">Travel &amp; Tour Consultancy</option>
+                <option value="visa">Visa &amp; Closed-Date Appointments</option>
+                <option value="first-timer">First-Timer Guidance</option>
+                <option value="countries">First-Timer Friendly Countries</option>
+              </select>
+            </div>
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required placeholder="Your name">
@@ -64,9 +76,24 @@
             </a>
           </div>
           <div class="contact-info-item">
-            <h4>Visit our virtual office</h4>
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/2348012345678" target="_blank" rel="noopener noreferrer" class="btn-outlined amber-link" style="display:inline-block;font-size:12px;">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+          <div class="contact-info-item">
+            <h4>Business Hours</h4>
+            <p>Mon – Sat: 9:00 AM – 6:00 PM (WAT)</p>
+            <p>Sunday: Closed</p>
+          </div>
+          <div class="contact-info-item">
+            <h4>Visit Us</h4>
+            <p><i class="fa-regular fa-location-dot" style="margin-right:6px;"></i>Lagos, Nigeria — Virtual consultations by appointment</p>
+          </div>
+          <div class="contact-info-item">
+            <h4>Virtual Office</h4>
             <div class="contact-map">
-              <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&h=400&q=80" alt="Travel planning map with destinations marked" width="800" height="400" loading="lazy" decoding="async">
+              <img src="https://source.unsplash.com/featured/800x400?world,map" alt="World map illustration" loading="lazy">
             </div>
           </div>
         </div>
@@ -98,6 +125,7 @@
           <a href="index.html">Home</a>
           <a href="services.html">Services</a>
           <a href="about.html">About</a>
+          <a href="pricing.html">Pricing</a>
           <a href="contact.html">Contact</a>
           <a href="blog.html">Blog</a>
         </div>
@@ -113,6 +141,11 @@
     </div>
   </div>
 </footer>
+
+<!-- Back to top -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 <script src="script.js"></script>
 </body>

@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services — EaziTravel Solutions</title>
-  <meta name="description" content="Explore our travel consultancy services: visa appointments, first-timer guidance, tour planning, and more.">
+  <title>Our Services — Visa, Tour Consultancy &amp; First-Timer Travel | EaziTravel Solutions</title>
+  <meta name="description" content="Explore EaziTravel Solutions' services: travel consultancy, visa & closed-date appointments, first-timer guidance, and first-timer friendly country recommendations.">
+  <meta property="og:image" content="https://source.unsplash.com/featured/1200x630?passport-stamp">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Space+Mono&family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -23,6 +24,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html" class="active">Services</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="blog.html">Blog</a></li>
     </ul>
@@ -31,7 +33,7 @@
 
 <main class="page-wrapper">
 
-  <section class="hero hero-smaller" style="background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&h=600&q=80')">
+  <section class="hero hero-smaller" style="background-image: url('https://source.unsplash.com/featured/1600x600?passport-stamp')">
     <div class="hero-content">
       <h1 class="hero-headline">Our Services</h1>
       <p class="hero-subhead">Comprehensive travel solutions tailored to you</p>
@@ -41,28 +43,109 @@
   <section class="section">
     <div class="container">
       <div class="services-grid">
+        <!-- Service 1 -->
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-compass"></i></div>
-          <h3 class="service-title">Travel & Tour Consultancy</h3>
+          <h3 class="service-title">Travel &amp; Tour Consultancy</h3>
           <p class="service-desc">Complete trip planning from destination research to booking, ensuring a seamless experience.</p>
+          <details class="service-details">
+            <summary>View details</summary>
+            <div class="details-content">
+              <p><strong>What's included:</strong> Destination research, itinerary planning, booking assistance.</p>
+              <p><strong>Timeline:</strong> 2–5 business days</p>
+              <p><strong>Price from:</strong> $49</p>
+            </div>
+          </details>
+          <a href="contact.html" class="btn-outlined amber-link" style="margin-top:var(--spacing-16);font-size:var(--text-caption);">Request a Quote</a>
         </div>
+
+        <!-- Service 2 -->
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-passport"></i></div>
-          <h3 class="service-title">Visa & Closed-Date Appointments</h3>
+          <h3 class="service-title">Visa &amp; Closed-Date Appointments</h3>
           <p class="service-desc">We secure hard-to-get appointments and guide you through every document requirement.</p>
           <span class="limited-badge amber-link">Limited slots available</span>
+          <details class="service-details">
+            <summary>View details</summary>
+            <div class="details-content">
+              <p><strong>What's included:</strong> Document checklist, application review, appointment booking, follow-up support.</p>
+              <p><strong>Timeline:</strong> 3–10 business days</p>
+              <p><strong>Price from:</strong> $129</p>
+            </div>
+          </details>
+          <a href="contact.html" class="btn-outlined amber-link" style="margin-top:var(--spacing-16);font-size:var(--text-caption);">Request a Quote</a>
         </div>
+
+        <!-- Service 3 -->
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-globe-americas"></i></div>
           <h3 class="service-title">First-Timer Guidance</h3>
           <p class="service-desc">Personalized support for travelers who have never flown or applied for a passport before.</p>
+          <details class="service-details">
+            <summary>View details</summary>
+            <div class="details-content">
+              <p><strong>What's included:</strong> Passport assistance, first flight briefing, travel insurance advice, packing checklist.</p>
+              <p><strong>Timeline:</strong> 1–3 business days</p>
+              <p><strong>Price from:</strong> $79</p>
+            </div>
+          </details>
+          <a href="contact.html" class="btn-outlined amber-link" style="margin-top:var(--spacing-16);font-size:var(--text-caption);">Request a Quote</a>
         </div>
+
+        <!-- Service 4 -->
         <div class="service-card">
           <div class="service-icon"><i class="fa-solid fa-earth-americas"></i></div>
           <h3 class="service-title">First-Timer Friendly Countries</h3>
           <p class="service-desc">Curated list of destinations that welcome first-time international travelers with easy visa processes.</p>
+          <details class="service-details">
+            <summary>View details</summary>
+            <div class="details-content">
+              <p><strong>What's included:</strong> Curated country list, visa requirement summary, cultural tips, accommodation recommendations.</p>
+              <p><strong>Timeline:</strong> Instant download</p>
+              <p><strong>Price from:</strong> $29</p>
+            </div>
+          </details>
+          <a href="contact.html" class="btn-outlined amber-link" style="margin-top:var(--spacing-16);font-size:var(--text-caption);">Request a Quote</a>
         </div>
       </div>
+
+      <!-- Comparison Table -->
+      <div class="comparison-section">
+        <div class="section-label">Compare</div>
+        <h2 class="section-title">DIY Travel vs EaziTravel</h2>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>DIY</th>
+              <th>EaziTravel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Visa guidance</td>
+              <td>&#10005; Stress &amp; confusion</td>
+              <td>&#10003; Expert handling</td>
+            </tr>
+            <tr>
+              <td>Appointment booking</td>
+              <td>&#10005; Long queues</td>
+              <td>&#10003; Guaranteed slots</td>
+            </tr>
+            <tr>
+              <td>24/7 support</td>
+              <td>&#10005; No backup</td>
+              <td>&#10003; Always available</td>
+            </tr>
+            <tr>
+              <td>First-timer help</td>
+              <td>&#10005; Overwhelming</td>
+              <td>&#10003; Step-by-step</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="cta-center">
         <a href="contact.html" class="btn-filled amber-link">Book a Consultation</a>
       </div>
@@ -84,6 +167,7 @@
           <a href="index.html">Home</a>
           <a href="services.html">Services</a>
           <a href="about.html">About</a>
+          <a href="pricing.html">Pricing</a>
           <a href="contact.html">Contact</a>
           <a href="blog.html">Blog</a>
         </div>
@@ -99,6 +183,11 @@
     </div>
   </div>
 </footer>
+
+<!-- Back to top -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 <script src="script.js"></script>
 </body>
